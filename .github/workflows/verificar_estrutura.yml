@@ -1,0 +1,32 @@
+name: Verificar estrutura do projeto
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+      - name: Conferir materiais principais
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/01_Guia_Python.pdf
+          test -f docs/02_Guia_SystemVerilog.pdf
+          test -f notebooks/01_treino_exportacao.ipynb
+          test -f rtl/tiny_cnn.sv
+          test -f runs/baseline/best.pt
+          test -f exports/trained/quantized_model.npz
+          test -f dataset/preview.png
+          test "$(find dataset/train -type f -name '*.png' | wc -l)" -eq 1400
+          test "$(find dataset/val -type f -name '*.png' | wc -l)" -eq 300
+          test "$(find dataset/test -type f -name '*.png' | wc -l)" -eq 300
+          test ! -e ci-digital-cnn-verilog-upload.zip
