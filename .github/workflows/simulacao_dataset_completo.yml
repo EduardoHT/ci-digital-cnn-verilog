@@ -1,0 +1,92 @@
+name: Simulação RTL nas 2.000 imagens
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  planejar:
+    runs-on: ubuntu-latest
+    outputs:
+      started_unix: ${{ steps.clock.outputs.started_unix }}
+    steps:
+      - id: clock
+        shell: bash
+        run: echo "started_unix=$(date +%s)" >> "$GITHUB_OUTPUT"
+
+  cobertura-mapas:
+    needs: planejar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar Icarus Verilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Comparar todos os mapas internos nos vetores demo
+        run: python3 scripts/run_sim.py --export exports/demo
+      - name: Guardar cobertura detalhada
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-mapas-demo
+          path: reports/demo_*.log
+
+  simular-shards:
+    needs: planejar
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar simulador e preparador de entradas
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog
+          python3 -m pip install --disable-pip-version-check numpy pillow
+      - name: Executar RTL completo no lote
+        run: |
+          python3 scripts/run_rtl_dataset_shard.py \
+            --shard-index ${{ matrix.shard }} \
+            --shard-count 10 \
+            --out shard-results
+      - name: Guardar resultado do lote
+        uses: actions/upload-artifact@v4
+        with:
+          name: predictions-shard-${{ matrix.shard }}
+          path: shard-results/
+
+  agregar:
+    needs: [planejar, cobertura-mapas, simular-shards]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar os dez lotes
+        uses: actions/download-artifact@v4
+        with:
+          pattern: predictions-shard-*
+          path: shard-results
+          merge-multiple: true
+      - name: Gerar matrizes, métricas, figura e relatório
+        run: |
+          python3 scripts/aggregate_rtl_dataset_results.py \
+            --input shard-results \
+            --out results/rtl_demo_full_dataset \
+            --started-unix ${{ needs.planejar.outputs.started_unix }}
+      - name: Guardar artefatos completos
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-rtl-demo-2000-imagens
+          path: results/rtl_demo_full_dataset/
+      - name: Publicar resultados navegáveis no repositório privado
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add results/rtl_demo_full_dataset
+          git commit -m "Adiciona resultados RTL nas 2.000 imagens"
+          git push
