@@ -1,0 +1,74 @@
+name: Simulação HDL da CNN completa
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "rtl/**"
+      - "tb/**"
+      - "exports/demo/**"
+      - "exports/trained/**"
+      - "scripts/run_sim.py"
+      - ".github/workflows/simulacao_hdl.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  simular:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Baixar o repositório privado
+        uses: actions/checkout@v4
+
+      - name: Instalar o Icarus Verilog
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog
+          iverilog -V
+          vvp -V
+
+      - name: Confirmar o vetor do quadrado
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("exports/demo/vectors/vectors.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          square = data["samples"][1]
+          assert square["file"] == "test/quadrado/quadrado_0000.png"
+          assert square["true"] == 1
+          print("VETOR_QUADRADO_OK", square)
+          PY
+
+      - name: Simular pesos sintéticos determinísticos
+        shell: bash
+        run: |
+          python3 scripts/run_sim.py --export exports/demo
+          grep -q "PASS_ARITHMETIC" reports/demo_arithmetic_simulation.log
+          grep -q "PASS vector=1" reports/demo_simulation.log
+          grep -q "PASS_ALL" reports/demo_simulation.log
+          grep "PASS vector=1" reports/demo_simulation.log
+          grep "PASS_ALL" reports/demo_simulation.log
+
+      - name: Repetir com pesos treinados sem alterar o RTL
+        shell: bash
+        run: |
+          python3 scripts/run_sim.py --export exports/trained
+          grep -q "PASS_ARITHMETIC" reports/trained_arithmetic_simulation.log
+          grep -q "PASS_ALL" reports/trained_simulation.log
+          grep "PASS_ALL" reports/trained_simulation.log
+
+      - name: Guardar logs e resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-simulacao-hdl
+          path: |
+            reports/*_compile.log
+            reports/*_simulation.log
+            reports/*_rtl_verification.json
+          if-no-files-found: warn
