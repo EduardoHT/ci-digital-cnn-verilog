@@ -11,6 +11,8 @@ O repositório inclui o dataset sintético, notebook, código Python, módulos e
 - [Notebook de treinamento e exportação](notebooks/01_treino_exportacao.ipynb)
 - [Prévia do dataset](dataset/preview.png)
 - [Estado e limites da validação](reports/validation_status.json)
+- [Contrato RTL e simulação online](docs/CONTRATO_RTL_E_SIMULACAO.md)
+- [Evidência da simulação HDL online](reports/hdl_online_verification_2026-09-27.md)
 - [Auditoria técnica da versão 2](AUDITORIA_V2.md)
 - [README original do pacote](README_ORIGINAL.md)
 
@@ -45,7 +47,9 @@ Esses números descrevem apenas a execução incluída e o dataset sintético de
 
 ## Estado da validação
 
-A parte Python foi executada e testada. A compilação e a simulação SystemVerilog ainda estão pendentes, pois o ambiente que gerou o pacote não dispunha de simulador HDL. Os testbenches e os comandos necessários estão incluídos, mas não há um resultado real `PASS_ALL` de HDL neste repositório.
+A parte Python foi executada e testada. Em 27/09/2026, a RTL SystemVerilog completa também foi compilada e simulada com Icarus Verilog em uma execução privada do GitHub Actions. Passaram os testes aritméticos, dez vetores com pesos sintéticos determinísticos e vinte vetores com pesos treinados, com comparação exata de 9.102 valores por vetor. Consulte a [evidência da execução](reports/hdl_online_verification_2026-09-27.md).
+
+A simulação não equivale a síntese, análise de timing ou validação em FPGA física; essas etapas permanecem pendentes.
 
 Consulte o [README original](README_ORIGINAL.md) para os comandos completos de instalação, treinamento, exportação e simulação, além do contrato numérico usado entre Python e RTL.
 
