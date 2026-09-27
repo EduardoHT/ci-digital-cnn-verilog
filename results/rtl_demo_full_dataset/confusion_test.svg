@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="670" viewBox="0 0 680 670">
+<rect width="100%" height="100%" fill="white"/>
+<text x="340.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">Matriz de confusão — test — pesos sintéticos</text>
+<text x="400" y="58" text-anchor="middle" font-family="sans-serif" font-size="14">classe prevista</text>
+<text x="200.0" y="80" text-anchor="middle" font-family="sans-serif" font-size="12">circulo</text>
+<text x="138" y="144.0" text-anchor="end" font-family="sans-serif" font-size="12">circulo</text>
+<text x="300.0" y="80" text-anchor="middle" font-family="sans-serif" font-size="12">quadrado</text>
+<text x="138" y="244.0" text-anchor="end" font-family="sans-serif" font-size="12">quadrado</text>
+<text x="400.0" y="80" text-anchor="middle" font-family="sans-serif" font-size="12">triangulo</text>
+<text x="138" y="344.0" text-anchor="end" font-family="sans-serif" font-size="12">triangulo</text>
+<text x="500.0" y="80" text-anchor="middle" font-family="sans-serif" font-size="12">cruz</text>
+<text x="138" y="444.0" text-anchor="end" font-family="sans-serif" font-size="12">cruz</text>
+<text x="600.0" y="80" text-anchor="middle" font-family="sans-serif" font-size="12">estrela</text>
+<text x="138" y="544.0" text-anchor="end" font-family="sans-serif" font-size="12">estrela</text>
+<text transform="translate(20 340) rotate(-90)" text-anchor="middle" font-family="sans-serif" font-size="14">classe verdadeira</text>
+<rect x="150" y="90" width="100" height="100" fill="rgb(70,75,255)" stroke="#666"/>
+<text x="200.0" y="147.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">60</text>
+<rect x="250" y="90" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="300.0" y="147.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="350" y="90" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="400.0" y="147.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="450" y="90" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="500.0" y="147.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="550" y="90" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="600.0" y="147.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="150" y="190" width="100" height="100" fill="rgb(70,75,255)" stroke="#666"/>
+<text x="200.0" y="247.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">60</text>
+<rect x="250" y="190" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="300.0" y="247.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="350" y="190" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="400.0" y="247.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="450" y="190" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="500.0" y="247.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="550" y="190" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="600.0" y="247.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="150" y="290" width="100" height="100" fill="rgb(70,75,255)" stroke="#666"/>
+<text x="200.0" y="347.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">60</text>
+<rect x="250" y="290" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="300.0" y="347.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="350" y="290" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="400.0" y="347.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="450" y="290" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="500.0" y="347.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="550" y="290" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="600.0" y="347.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="150" y="390" width="100" height="100" fill="rgb(70,75,255)" stroke="#666"/>
+<text x="200.0" y="447.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">60</text>
+<rect x="250" y="390" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="300.0" y="447.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="350" y="390" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="400.0" y="447.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="450" y="390" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="500.0" y="447.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="550" y="390" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="600.0" y="447.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="150" y="490" width="100" height="100" fill="rgb(70,75,255)" stroke="#666"/>
+<text x="200.0" y="547.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">60</text>
+<rect x="250" y="490" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="300.0" y="547.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="350" y="490" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="400.0" y="547.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="450" y="490" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="500.0" y="547.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+<rect x="550" y="490" width="100" height="100" fill="rgb(245,250,255)" stroke="#666"/>
+<text x="600.0" y="547.0" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold">0</text>
+</svg>
