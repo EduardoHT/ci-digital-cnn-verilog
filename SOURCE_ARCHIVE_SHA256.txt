@@ -1,0 +1,11 @@
+Arquivo-fonte: CI_Digital_CNN_Python_SystemVerilog_v2.zip
+Tamanho: 2533037 bytes
+SHA-256: A4638CDAF8605BD370F5C27C68C0D3738C00DFE2F635B7D8B71489983C34E9A0
+
+Conteúdo original extraído: 2090 arquivos
+Arquivos acrescentados para publicação no GitHub:
+- README.md
+- .gitignore
+- SOURCE_ARCHIVE_SHA256.txt
+
+O README original foi preservado como README_ORIGINAL.md.

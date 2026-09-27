@@ -1,0 +1,6 @@
+# Ambiente em que o Python foi executado: Python 3.13.5, CPU Linux
+torch==2.10.0
+numpy==2.3.5
+Pillow==12.3.0
+matplotlib==3.10.8
+# Use requirements.txt para faixas compativeis; este arquivo registra a execucao, nao a exige.

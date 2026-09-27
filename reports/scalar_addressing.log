@@ -1,0 +1,46 @@
+PASS_SCALAR mode=trained vector=0
+PASS_SCALAR mode=trained vector=1
+PASS_SCALAR mode=trained vector=2
+PASS_SCALAR mode=trained vector=3
+PASS_SCALAR mode=trained vector=4
+PASS_SCALAR mode=trained vector=5
+PASS_SCALAR mode=trained vector=6
+PASS_SCALAR mode=trained vector=7
+PASS_SCALAR mode=trained vector=8
+PASS_SCALAR mode=trained vector=9
+PASS_SCALAR mode=trained vector=10
+PASS_SCALAR mode=trained vector=11
+PASS_SCALAR mode=trained vector=12
+PASS_SCALAR mode=trained vector=13
+PASS_SCALAR mode=trained vector=14
+PASS_SCALAR mode=trained vector=15
+PASS_SCALAR mode=trained vector=16
+PASS_SCALAR mode=trained vector=17
+PASS_SCALAR mode=trained vector=18
+PASS_SCALAR mode=trained vector=19
+PASS_SCALAR mode=demo vector=0
+PASS_SCALAR mode=demo vector=1
+PASS_SCALAR mode=demo vector=2
+PASS_SCALAR mode=demo vector=3
+PASS_SCALAR mode=demo vector=4
+PASS_SCALAR mode=demo vector=5
+PASS_SCALAR mode=demo vector=6
+PASS_SCALAR mode=demo vector=7
+PASS_SCALAR mode=demo vector=8
+PASS_SCALAR mode=demo vector=9
+[
+  {
+    "mode": "trained",
+    "vectors": 20,
+    "status": "PASS",
+    "values_compared": 182040,
+    "tool": "Python scalar addressing model, NOT HDL simulator"
+  },
+  {
+    "mode": "demo",
+    "vectors": 10,
+    "status": "PASS",
+    "values_compared": 91020,
+    "tool": "Python scalar addressing model, NOT HDL simulator"
+  }
+]

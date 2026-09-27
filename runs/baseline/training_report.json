@@ -1,0 +1,105 @@
+{
+  "architecture": "cnn28_c8_c16_fc5_v2",
+  "parameters": 3253,
+  "seed": 20260925,
+  "device": "cpu",
+  "epochs_requested": 40,
+  "epochs_run": 40,
+  "best_epoch": 36,
+  "best_val_accuracy": 0.9533333333333334,
+  "best_val_loss": 0.14891708374023438,
+  "float_test": {
+    "samples": 300,
+    "correct": 288,
+    "accuracy": 0.96,
+    "macro_f1": 0.9602403029307561,
+    "confusion_matrix": [
+      [
+        59,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        57,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        57,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        57,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        58
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "circulo",
+        "precision": 1.0,
+        "recall": 0.9833333333333333,
+        "f1": 0.9915966386554621,
+        "support": 60
+      },
+      {
+        "class": "quadrado",
+        "precision": 0.95,
+        "recall": 0.95,
+        "f1": 0.9500000000000001,
+        "support": 60
+      },
+      {
+        "class": "triangulo",
+        "precision": 0.9193548387096774,
+        "recall": 0.95,
+        "f1": 0.9344262295081968,
+        "support": 60
+      },
+      {
+        "class": "cruz",
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "support": 60
+      },
+      {
+        "class": "estrela",
+        "precision": 0.9354838709677419,
+        "recall": 0.9666666666666667,
+        "f1": 0.9508196721311476,
+        "support": 60
+      }
+    ]
+  },
+  "input_divisor": 256.0,
+  "classes": [
+    "circulo",
+    "quadrado",
+    "triangulo",
+    "cruz",
+    "estrela"
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5"
+  },
+  "dataset_manifest_sha256": "ea314d0d368b90cc90a4b2a674b2da816cd4d6ae8cb4bf3d93edc0b8c553b437"
+}

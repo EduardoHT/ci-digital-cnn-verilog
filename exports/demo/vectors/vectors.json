@@ -1,0 +1,145 @@
+{
+  "n_vectors": 10,
+  "n_labeled": 5,
+  "n_edges": 5,
+  "per_sample_values": {
+    "images": 784,
+    "conv1": 5408,
+    "pool1": 1352,
+    "conv2": 1936,
+    "pool2": 400,
+    "logits": 5
+  },
+  "samples": [
+    {
+      "file": "test/circulo/circulo_0000.png",
+      "true": 0,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        96836,
+        -62166,
+        -19234,
+        -15373,
+        -25116
+      ]
+    },
+    {
+      "file": "test/quadrado/quadrado_0000.png",
+      "true": 1,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        60969,
+        -54749,
+        2570,
+        -13455,
+        -45341
+      ]
+    },
+    {
+      "file": "test/triangulo/triangulo_0000.png",
+      "true": 2,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        78556,
+        -31915,
+        -19477,
+        -13759,
+        22700
+      ]
+    },
+    {
+      "file": "test/cruz/cruz_0000.png",
+      "true": 3,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        83014,
+        -54804,
+        -13441,
+        6904,
+        -22655
+      ]
+    },
+    {
+      "file": "test/estrela/estrela_0000.png",
+      "true": 4,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        46581,
+        -45914,
+        5447,
+        -16656,
+        -46170
+      ]
+    },
+    {
+      "file": "zeros",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        22248,
+        -3874,
+        -4654,
+        12955,
+        -9294
+      ]
+    },
+    {
+      "file": "all_255",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        103388,
+        -74449,
+        -25156,
+        -40202,
+        -17795
+      ]
+    },
+    {
+      "file": "checkerboard",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        74988,
+        -62880,
+        -11170,
+        -40623,
+        -22385
+      ]
+    },
+    {
+      "file": "impulse",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        27908,
+        -6721,
+        -3930,
+        17072,
+        -8565
+      ]
+    },
+    {
+      "file": "uniform_noise",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        90831,
+        -61667,
+        -22893,
+        -26284,
+        -33499
+      ]
+    }
+  ]
+}

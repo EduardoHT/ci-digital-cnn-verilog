@@ -1,0 +1,36 @@
+{
+  "total_images": 2000,
+  "image_size": [
+    28,
+    28
+  ],
+  "mode": "L",
+  "seed": 20260925,
+  "classes": [
+    "circulo",
+    "quadrado",
+    "triangulo",
+    "cruz",
+    "estrela"
+  ],
+  "class_to_idx": {
+    "circulo": 0,
+    "quadrado": 1,
+    "triangulo": 2,
+    "cruz": 3,
+    "estrela": 4
+  },
+  "counts_per_class": {
+    "train": 280,
+    "val": 60,
+    "test": 60
+  },
+  "counts_total": {
+    "train": 1400,
+    "val": 300,
+    "test": 300
+  },
+  "unique_pixel_hashes": 2000,
+  "input_divisor": 256.0,
+  "scope": "Figuras claras preenchidas em fundo escuro simples. Nao sao imagens reais de drones."
+}

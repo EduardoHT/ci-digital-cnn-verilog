@@ -1,0 +1,14 @@
+test_manifest_counts_hashes_and_format (test_python.TestDataset.test_manifest_counts_hashes_and_format) ... ok
+test_architecture (test_python.TestNumericContract.test_architecture) ... ok
+test_convolution_with_scalar_loop (test_python.TestNumericContract.test_convolution_with_scalar_loop) ... ok
+test_exported_expected_first_sample (test_python.TestNumericContract.test_exported_expected_first_sample) ... ok
+test_int32_overflow_detected (test_python.TestNumericContract.test_int32_overflow_detected) ... ok
+test_mem_signed_roundtrip (test_python.TestNumericContract.test_mem_signed_roundtrip) ... ok
+test_model_batch_equivalence (test_python.TestNumericContract.test_model_batch_equivalence) ... ok
+test_pooling_odd_border (test_python.TestNumericContract.test_pooling_odd_border) ... ok
+test_relu_round_saturate (test_python.TestNumericContract.test_relu_round_saturate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.307s
+
+OK

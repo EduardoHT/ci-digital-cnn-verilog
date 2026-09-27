@@ -1,0 +1,5 @@
+PASS: notebook executado da primeira a ultima celula.
+Smoke test: 1 epoca; pastas temporarias externas ao pacote.
+Treino baseline completo: executado separadamente, 40 epocas.
+Tempo do smoke test: 8.39 segundos.
+Nao houve execucao de um simulador HDL.

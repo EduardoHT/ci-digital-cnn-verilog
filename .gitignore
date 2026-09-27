@@ -1,0 +1,26 @@
+# Ambientes e caches locais
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Configurações locais e credenciais
+.env
+.env.*
+!.env.example
+
+# Arquivos de editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Saídas temporárias locais
+*.tmp
+*.swp
+*.bak

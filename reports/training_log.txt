@@ -1,0 +1,120 @@
+epoch 01 loss=1.5758 train=0.2929 val=0.2933 val_loss=1.4993
+epoch 02 loss=1.3666 train=0.3850 val=0.4733 val_loss=1.2467
+epoch 03 loss=1.1572 train=0.4729 val=0.4933 val_loss=1.1356
+epoch 04 loss=1.0550 train=0.5371 val=0.5933 val_loss=0.9695
+epoch 05 loss=0.9537 train=0.6150 val=0.5967 val_loss=0.9149
+epoch 06 loss=0.8634 train=0.6879 val=0.6500 val_loss=0.8370
+epoch 07 loss=0.7674 train=0.7321 val=0.7533 val_loss=0.7180
+epoch 08 loss=0.6926 train=0.7486 val=0.7700 val_loss=0.6396
+epoch 09 loss=0.6250 train=0.7757 val=0.8167 val_loss=0.5628
+epoch 10 loss=0.5708 train=0.7979 val=0.8233 val_loss=0.5307
+epoch 11 loss=0.5392 train=0.8029 val=0.8400 val_loss=0.4976
+epoch 12 loss=0.5015 train=0.8164 val=0.8433 val_loss=0.4536
+epoch 13 loss=0.4639 train=0.8286 val=0.8500 val_loss=0.4618
+epoch 14 loss=0.4207 train=0.8479 val=0.8667 val_loss=0.4047
+epoch 15 loss=0.3877 train=0.8657 val=0.8767 val_loss=0.3711
+epoch 16 loss=0.3563 train=0.8836 val=0.8800 val_loss=0.3643
+epoch 17 loss=0.3401 train=0.8807 val=0.8900 val_loss=0.3341
+epoch 18 loss=0.2967 train=0.9029 val=0.8967 val_loss=0.3131
+epoch 19 loss=0.2764 train=0.9071 val=0.8967 val_loss=0.2991
+epoch 20 loss=0.2758 train=0.9157 val=0.8867 val_loss=0.3124
+epoch 21 loss=0.2470 train=0.9321 val=0.9100 val_loss=0.2635
+epoch 22 loss=0.2239 train=0.9371 val=0.9133 val_loss=0.3006
+epoch 23 loss=0.2081 train=0.9407 val=0.9233 val_loss=0.2334
+epoch 24 loss=0.1926 train=0.9464 val=0.9200 val_loss=0.2418
+epoch 25 loss=0.1698 train=0.9664 val=0.9200 val_loss=0.2359
+epoch 26 loss=0.1589 train=0.9621 val=0.9267 val_loss=0.2277
+epoch 27 loss=0.1566 train=0.9614 val=0.9300 val_loss=0.2054
+epoch 28 loss=0.1464 train=0.9664 val=0.9333 val_loss=0.1949
+epoch 29 loss=0.1275 train=0.9750 val=0.9400 val_loss=0.1894
+epoch 30 loss=0.1249 train=0.9736 val=0.9433 val_loss=0.1848
+epoch 31 loss=0.1141 train=0.9800 val=0.9367 val_loss=0.1817
+epoch 32 loss=0.1008 train=0.9829 val=0.9433 val_loss=0.1780
+epoch 33 loss=0.1038 train=0.9771 val=0.9400 val_loss=0.1786
+epoch 34 loss=0.0921 train=0.9864 val=0.9433 val_loss=0.1685
+epoch 35 loss=0.0940 train=0.9821 val=0.9367 val_loss=0.1695
+epoch 36 loss=0.0823 train=0.9886 val=0.9533 val_loss=0.1489
+epoch 37 loss=0.0728 train=0.9907 val=0.9333 val_loss=0.1561
+epoch 38 loss=0.0677 train=0.9943 val=0.9267 val_loss=0.1642
+epoch 39 loss=0.0692 train=0.9907 val=0.9400 val_loss=0.1515
+epoch 40 loss=0.0615 train=0.9921 val=0.9500 val_loss=0.1434
+{
+  "samples": 300,
+  "correct": 288,
+  "accuracy": 0.96,
+  "macro_f1": 0.9602403029307561,
+  "confusion_matrix": [
+    [
+      59,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      57,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      57,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      57,
+      3
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      58
+    ]
+  ],
+  "per_class": [
+    {
+      "class": "circulo",
+      "precision": 1.0,
+      "recall": 0.9833333333333333,
+      "f1": 0.9915966386554621,
+      "support": 60
+    },
+    {
+      "class": "quadrado",
+      "precision": 0.95,
+      "recall": 0.95,
+      "f1": 0.9500000000000001,
+      "support": 60
+    },
+    {
+      "class": "triangulo",
+      "precision": 0.9193548387096774,
+      "recall": 0.95,
+      "f1": 0.9344262295081968,
+      "support": 60
+    },
+    {
+      "class": "cruz",
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1": 0.9743589743589743,
+      "support": 60
+    },
+    {
+      "class": "estrela",
+      "precision": 0.9354838709677419,
+      "recall": 0.9666666666666667,
+      "f1": 0.9508196721311476,
+      "support": 60
+    }
+  ]
+}

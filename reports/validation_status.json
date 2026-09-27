@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-25",
+  "project_version": "2.0",
+  "dataset": {
+    "status": "PASS",
+    "png_images": 2000,
+    "unique_pixel_hashes": 2000
+  },
+  "baseline_training": {
+    "status": "EXECUTED",
+    "epochs_run": 40,
+    "best_epoch": 36,
+    "device": "cpu"
+  },
+  "python_unit_tests": {
+    "status": "PASS",
+    "tests": 9
+  },
+  "notebook_smoke_test": {
+    "status": "PASS",
+    "epochs": 1,
+    "all_cells_executed": true
+  },
+  "scalar_addressing_reference": {
+    "status": "PASS",
+    "vectors": 30,
+    "compared_values": 273060,
+    "not_hdl_simulation": true
+  },
+  "systemverilog_compilation": {
+    "status": "NOT_EXECUTED",
+    "reason": "No Icarus Verilog or Verilator in this runtime; installation/download attempts were unsuccessful."
+  },
+  "systemverilog_simulation": {
+    "status": "NOT_EXECUTED",
+    "ready_tests": "tb_arithmetic.sv and tb_cnn.sv; EDA self-contained variants"
+  },
+  "eda_playground_execution": {
+    "status": "NOT_EXECUTED",
+    "prepared_samples_per_bundle": 5
+  },
+  "fpga_synthesis_and_physical_validation": {
+    "status": "OUT_OF_SCOPE"
+  },
+  "metrics": {
+    "float_correct": 288,
+    "integer_correct": 289,
+    "test_images": 300,
+    "float_accuracy": 0.96,
+    "integer_accuracy": 0.9633333333333334,
+    "float_integer_class_agreement": 0.9966666666666667
+  },
+  "tested_environment": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.10.8"
+  },
+  "rtl_sha256": {
+    "mac_u8s8.sv": "95bafd326c1756de75164c258d9172ac546df3995c61f535e4e8d945b0e9e4ed",
+    "max4_u8.sv": "87f5fea57b1f5f578446f47ed4e7dfc0732da5a515c50fba34666c6bd08d77cf",
+    "relu_requant.sv": "7d8c332ccaeef5cabf98fae3a0b50cf695f708134a3296d6f54d3629bc8aa218",
+    "tiny_cnn.sv": "7294fd6d786009c4ca80808e7b39d6c32ed1a09ca0c73670b543c09ac1c2a611"
+  }
+}

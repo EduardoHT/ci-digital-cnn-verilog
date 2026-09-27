@@ -1,0 +1,170 @@
+{
+  "mode": "trained",
+  "float_test": {
+    "samples": 300,
+    "correct": 288,
+    "accuracy": 0.96,
+    "macro_f1": 0.9602403029307561,
+    "confusion_matrix": [
+      [
+        59,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        57,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        57,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        57,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        58
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "circulo",
+        "precision": 1.0,
+        "recall": 0.9833333333333333,
+        "f1": 0.9915966386554621,
+        "support": 60
+      },
+      {
+        "class": "quadrado",
+        "precision": 0.95,
+        "recall": 0.95,
+        "f1": 0.9500000000000001,
+        "support": 60
+      },
+      {
+        "class": "triangulo",
+        "precision": 0.9193548387096774,
+        "recall": 0.95,
+        "f1": 0.9344262295081968,
+        "support": 60
+      },
+      {
+        "class": "cruz",
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "support": 60
+      },
+      {
+        "class": "estrela",
+        "precision": 0.9354838709677419,
+        "recall": 0.9666666666666667,
+        "f1": 0.9508196721311476,
+        "support": 60
+      }
+    ]
+  },
+  "integer_test": {
+    "samples": 300,
+    "correct": 289,
+    "accuracy": 0.9633333333333334,
+    "macro_f1": 0.9635176138551259,
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        57,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        57,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        57,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        58
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "circulo",
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 60
+      },
+      {
+        "class": "quadrado",
+        "precision": 0.9661016949152542,
+        "recall": 0.95,
+        "f1": 0.957983193277311,
+        "support": 60
+      },
+      {
+        "class": "triangulo",
+        "precision": 0.9193548387096774,
+        "recall": 0.95,
+        "f1": 0.9344262295081968,
+        "support": 60
+      },
+      {
+        "class": "cruz",
+        "precision": 1.0,
+        "recall": 0.95,
+        "f1": 0.9743589743589743,
+        "support": 60
+      },
+      {
+        "class": "estrela",
+        "precision": 0.9354838709677419,
+        "recall": 0.9666666666666667,
+        "f1": 0.9508196721311476,
+        "support": 60
+      }
+    ]
+  },
+  "float_int_class_agreement": 0.9966666666666667,
+  "activation_at_255_fraction": {
+    "conv1": 0.0,
+    "conv2": 0.0
+  },
+  "note": "Equivalencia RTL deve ser com esta referencia inteira, nao com float32.",
+  "mem_roundtrip": "PASS"
+}

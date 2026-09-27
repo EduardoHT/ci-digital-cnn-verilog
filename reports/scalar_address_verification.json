@@ -1,0 +1,16 @@
+[
+  {
+    "mode": "trained",
+    "vectors": 20,
+    "status": "PASS",
+    "values_compared": 182040,
+    "tool": "Python scalar addressing model, NOT HDL simulator"
+  },
+  {
+    "mode": "demo",
+    "vectors": 10,
+    "status": "PASS",
+    "values_compared": 91020,
+    "tool": "Python scalar addressing model, NOT HDL simulator"
+  }
+]

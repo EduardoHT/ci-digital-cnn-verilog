@@ -1,0 +1,11 @@
+{
+  "mode": "random_demo_not_trained",
+  "float_int_class_agreement": 1.0,
+  "activation_at_255_fraction": {
+    "conv1": 0.0,
+    "conv2": 0.0
+  },
+  "note": "Equivalencia RTL deve ser com esta referencia inteira, nao com float32.",
+  "mem_roundtrip": "PASS"
+}
+float accuracy 0.2 integer accuracy 0.2

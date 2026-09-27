@@ -1,0 +1,8 @@
+{
+  "export_name": "demo",
+  "samples": 5,
+  "total_characters": 134246,
+  "full_intermediate_comparison": true,
+  "external_mem_files_required": false,
+  "execution_status": "NOT_EXECUTED_BY_THIS_GENERATOR"
+}
