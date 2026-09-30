@@ -1,0 +1,176 @@
+{
+  "name": "fold_1",
+  "architecture": "cnn28_c8_c16_fc5_v2",
+  "image_size": [
+    28,
+    28
+  ],
+  "parameters": 3253,
+  "seed": 20261490,
+  "train_samples": 1440,
+  "val_samples": 360,
+  "test_samples": 200,
+  "epochs_run": 40,
+  "best_epoch": 39,
+  "elapsed_seconds": 1.6230284540069988,
+  "validation": {
+    "samples": 360,
+    "correct": 313,
+    "accuracy": 0.8694444444444445,
+    "macro_f1": 0.8694475064449831,
+    "confusion_matrix": [
+      [
+        64,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        56,
+        10,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        63,
+        4,
+        5
+      ],
+      [
+        0,
+        1,
+        3,
+        65,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        6,
+        65
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "circulo",
+        "precision": 0.9552238805970149,
+        "recall": 0.8888888888888888,
+        "f1": 0.9208633093525178,
+        "support": 72
+      },
+      {
+        "class": "quadrado",
+        "precision": 0.8615384615384616,
+        "recall": 0.7777777777777778,
+        "f1": 0.8175182481751826,
+        "support": 72
+      },
+      {
+        "class": "triangulo",
+        "precision": 0.8181818181818182,
+        "recall": 0.875,
+        "f1": 0.8456375838926175,
+        "support": 72
+      },
+      {
+        "class": "cruz",
+        "precision": 0.8333333333333334,
+        "recall": 0.9027777777777778,
+        "f1": 0.8666666666666667,
+        "support": 72
+      },
+      {
+        "class": "estrela",
+        "precision": 0.8904109589041096,
+        "recall": 0.9027777777777778,
+        "f1": 0.896551724137931,
+        "support": 72
+      }
+    ]
+  },
+  "heldout_test": {
+    "samples": 200,
+    "correct": 176,
+    "accuracy": 0.88,
+    "macro_f1": 0.8789559045900199,
+    "confusion_matrix": [
+      [
+        35,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        30,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        36,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        36,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        39
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "circulo",
+        "precision": 0.875,
+        "recall": 0.875,
+        "f1": 0.875,
+        "support": 40
+      },
+      {
+        "class": "quadrado",
+        "precision": 0.8333333333333334,
+        "recall": 0.75,
+        "f1": 0.7894736842105262,
+        "support": 40
+      },
+      {
+        "class": "triangulo",
+        "precision": 0.8372093023255814,
+        "recall": 0.9,
+        "f1": 0.8674698795180723,
+        "support": 40
+      },
+      {
+        "class": "cruz",
+        "precision": 0.9473684210526315,
+        "recall": 0.9,
+        "f1": 0.9230769230769231,
+        "support": 40
+      },
+      {
+        "class": "estrela",
+        "precision": 0.9069767441860465,
+        "recall": 0.975,
+        "f1": 0.9397590361445783,
+        "support": 40
+      }
+    ]
+  }
+}

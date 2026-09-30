@@ -1,0 +1,102 @@
+{
+  "run": "fold_5",
+  "test_images": 200,
+  "confusion_matrix": [
+    [
+      40,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      34,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      39,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      37,
+      1
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      37
+    ]
+  ],
+  "total": 200,
+  "correct": 187,
+  "accuracy": 0.935,
+  "macro_precision": 0.9404629413140052,
+  "macro_recall": 0.9349999999999999,
+  "macro_f1": 0.9353151937401227,
+  "per_class": [
+    {
+      "class": "circulo",
+      "support": 40,
+      "predicted": 42,
+      "tp": 40,
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1": 0.975609756097561
+    },
+    {
+      "class": "quadrado",
+      "support": 40,
+      "predicted": 35,
+      "tp": 34,
+      "precision": 0.9714285714285714,
+      "recall": 0.85,
+      "f1": 0.9066666666666667
+    },
+    {
+      "class": "triangulo",
+      "support": 40,
+      "predicted": 47,
+      "tp": 39,
+      "precision": 0.8297872340425532,
+      "recall": 0.975,
+      "f1": 0.896551724137931
+    },
+    {
+      "class": "cruz",
+      "support": 40,
+      "predicted": 37,
+      "tp": 37,
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1": 0.961038961038961
+    },
+    {
+      "class": "estrela",
+      "support": 40,
+      "predicted": 39,
+      "tp": 37,
+      "precision": 0.9487179487179487,
+      "recall": 0.925,
+      "f1": 0.9367088607594937
+    }
+  ],
+  "rtl_python_integer_logits_exact": true,
+  "rtl_python_integer_class_exact": true,
+  "reference_matches": 200,
+  "cycles_per_image_unique": [
+    206520
+  ],
+  "elapsed_seconds": 267.7437578229874,
+  "weights": "exports/cv_70_20_10/fold_5"
+}

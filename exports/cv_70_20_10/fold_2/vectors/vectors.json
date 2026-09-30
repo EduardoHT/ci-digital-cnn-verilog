@@ -1,0 +1,275 @@
+{
+  "n_vectors": 20,
+  "n_labeled": 15,
+  "n_edges": 5,
+  "per_sample_values": {
+    "images": 784,
+    "conv1": 5408,
+    "pool1": 1352,
+    "conv2": 1936,
+    "pool2": 400,
+    "logits": 5
+  },
+  "samples": [
+    {
+      "file": "test/circulo/circulo_0001.png",
+      "true": 0,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        15369,
+        4857,
+        -17893,
+        1815,
+        -24975
+      ]
+    },
+    {
+      "file": "test/quadrado/quadrado_0008.png",
+      "true": 1,
+      "kind": "test",
+      "expected_class": 1,
+      "expected_logits": [
+        2297,
+        3215,
+        -2219,
+        -1255,
+        -10497
+      ]
+    },
+    {
+      "file": "test/triangulo/triangulo_0005.png",
+      "true": 2,
+      "kind": "test",
+      "expected_class": 2,
+      "expected_logits": [
+        -5845,
+        -2040,
+        -745,
+        -2661,
+        -2202
+      ]
+    },
+    {
+      "file": "test/cruz/cruz_0004.png",
+      "true": 3,
+      "kind": "test",
+      "expected_class": 3,
+      "expected_logits": [
+        -12946,
+        -3761,
+        -4714,
+        7306,
+        654
+      ]
+    },
+    {
+      "file": "test/estrela/estrela_0001.png",
+      "true": 4,
+      "kind": "test",
+      "expected_class": 4,
+      "expected_logits": [
+        -10646,
+        -2033,
+        2986,
+        762,
+        4239
+      ]
+    },
+    {
+      "file": "test/circulo/circulo_0004.png",
+      "true": 0,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        16379,
+        5766,
+        -15136,
+        -651,
+        -21084
+      ]
+    },
+    {
+      "file": "test/quadrado/quadrado_0010.png",
+      "true": 1,
+      "kind": "test",
+      "expected_class": 1,
+      "expected_logits": [
+        -6124,
+        1875,
+        598,
+        -1625,
+        -1451
+      ]
+    },
+    {
+      "file": "test/triangulo/triangulo_0008.png",
+      "true": 2,
+      "kind": "test",
+      "expected_class": 2,
+      "expected_logits": [
+        -4500,
+        1031,
+        2925,
+        -1494,
+        -57
+      ]
+    },
+    {
+      "file": "test/cruz/cruz_0010.png",
+      "true": 3,
+      "kind": "test",
+      "expected_class": 3,
+      "expected_logits": [
+        -16358,
+        -4382,
+        -522,
+        5987,
+        4980
+      ]
+    },
+    {
+      "file": "test/estrela/estrela_0002.png",
+      "true": 4,
+      "kind": "test",
+      "expected_class": 4,
+      "expected_logits": [
+        -10729,
+        -3277,
+        3331,
+        1604,
+        5002
+      ]
+    },
+    {
+      "file": "test/circulo/circulo_0006.png",
+      "true": 0,
+      "kind": "test",
+      "expected_class": 0,
+      "expected_logits": [
+        12959,
+        3752,
+        -13203,
+        -2733,
+        -29321
+      ]
+    },
+    {
+      "file": "test/quadrado/quadrado_0016.png",
+      "true": 1,
+      "kind": "test",
+      "expected_class": 1,
+      "expected_logits": [
+        -1233,
+        1098,
+        -519,
+        -2191,
+        -6383
+      ]
+    },
+    {
+      "file": "test/triangulo/triangulo_0012.png",
+      "true": 2,
+      "kind": "test",
+      "expected_class": 2,
+      "expected_logits": [
+        -9099,
+        226,
+        2406,
+        -1655,
+        825
+      ]
+    },
+    {
+      "file": "test/cruz/cruz_0011.png",
+      "true": 3,
+      "kind": "test",
+      "expected_class": 3,
+      "expected_logits": [
+        -15157,
+        -5597,
+        -10516,
+        8377,
+        -4948
+      ]
+    },
+    {
+      "file": "test/estrela/estrela_0005.png",
+      "true": 4,
+      "kind": "test",
+      "expected_class": 4,
+      "expected_logits": [
+        -14669,
+        -3117,
+        131,
+        4170,
+        5347
+      ]
+    },
+    {
+      "file": "zeros",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 2,
+      "expected_logits": [
+        -1458,
+        3965,
+        8613,
+        -9233,
+        -523
+      ]
+    },
+    {
+      "file": "all_255",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 0,
+      "expected_logits": [
+        44936,
+        636,
+        -41874,
+        -7821,
+        -61964
+      ]
+    },
+    {
+      "file": "checkerboard",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 3,
+      "expected_logits": [
+        -7747,
+        -5098,
+        -183,
+        1940,
+        1308
+      ]
+    },
+    {
+      "file": "impulse",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 2,
+      "expected_logits": [
+        -2383,
+        3964,
+        8898,
+        -9200,
+        -162
+      ]
+    },
+    {
+      "file": "uniform_noise",
+      "true": null,
+      "kind": "arithmetic_edge",
+      "expected_class": 4,
+      "expected_logits": [
+        -28489,
+        -16330,
+        -5841,
+        12797,
+        17729
+      ]
+    }
+  ]
+}

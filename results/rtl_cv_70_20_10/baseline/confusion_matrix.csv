@@ -1,0 +1,6 @@
+true\pred,circulo,quadrado,triangulo,cruz,estrela
+circulo,37,3,0,0,0
+quadrado,6,29,4,1,0
+triangulo,0,1,37,0,2
+cruz,0,0,1,37,2
+estrela,0,0,1,1,38

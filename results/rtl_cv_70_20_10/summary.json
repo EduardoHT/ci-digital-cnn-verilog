@@ -1,0 +1,621 @@
+{
+  "status": "PASS",
+  "protocol": "real Icarus Verilog on the same fixed 200-image test set",
+  "runs": [
+    {
+      "run": "baseline",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          37,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          29,
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          37,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          37,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          38
+        ]
+      ],
+      "total": 200,
+      "correct": 178,
+      "accuracy": 0.89,
+      "macro_precision": 0.8906395929651744,
+      "macro_recall": 0.89,
+      "macro_f1": 0.8882382414235728,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 43,
+          "tp": 37,
+          "precision": 0.8604651162790697,
+          "recall": 0.925,
+          "f1": 0.891566265060241
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 33,
+          "tp": 29,
+          "precision": 0.8787878787878788,
+          "recall": 0.725,
+          "f1": 0.7945205479452054
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 43,
+          "tp": 37,
+          "precision": 0.8604651162790697,
+          "recall": 0.925,
+          "f1": 0.891566265060241
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 39,
+          "tp": 37,
+          "precision": 0.9487179487179487,
+          "recall": 0.925,
+          "f1": 0.9367088607594937
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 42,
+          "tp": 38,
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "f1": 0.9268292682926829
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 262.1756926179951,
+      "weights": "exports/cv_70_20_10/baseline"
+    },
+    {
+      "run": "fold_1",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          35,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          30,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          35,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          35,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          38
+        ]
+      ],
+      "total": 200,
+      "correct": 173,
+      "accuracy": 0.865,
+      "macro_precision": 0.864521058744422,
+      "macro_recall": 0.865,
+      "macro_f1": 0.8643781993375489,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 41,
+          "tp": 35,
+          "precision": 0.8536585365853658,
+          "recall": 0.875,
+          "f1": 0.8641975308641976
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 38,
+          "tp": 30,
+          "precision": 0.7894736842105263,
+          "recall": 0.75,
+          "f1": 0.7692307692307692
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 41,
+          "tp": 35,
+          "precision": 0.8536585365853658,
+          "recall": 0.875,
+          "f1": 0.8641975308641976
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 38,
+          "tp": 35,
+          "precision": 0.9210526315789473,
+          "recall": 0.875,
+          "f1": 0.8974358974358975
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 42,
+          "tp": 38,
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "f1": 0.9268292682926829
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 252.68879031800316,
+      "weights": "exports/cv_70_20_10/fold_1"
+    },
+    {
+      "run": "fold_2",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          39,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          29,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          36,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          38,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          38
+        ]
+      ],
+      "total": 200,
+      "correct": 180,
+      "accuracy": 0.9,
+      "macro_precision": 0.9032241286347947,
+      "macro_recall": 0.9,
+      "macro_f1": 0.8979192619636646,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 46,
+          "tp": 39,
+          "precision": 0.8478260869565217,
+          "recall": 0.975,
+          "f1": 0.9069767441860466
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 31,
+          "tp": 29,
+          "precision": 0.9354838709677419,
+          "recall": 0.725,
+          "f1": 0.8169014084507041
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 41,
+          "tp": 36,
+          "precision": 0.8780487804878049,
+          "recall": 0.9,
+          "f1": 0.888888888888889
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 40,
+          "tp": 38,
+          "precision": 0.95,
+          "recall": 0.95,
+          "f1": 0.9500000000000001
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 42,
+          "tp": 38,
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "f1": 0.9268292682926829
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 264.87599016699824,
+      "weights": "exports/cv_70_20_10/fold_2"
+    },
+    {
+      "run": "fold_3",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          37,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          31,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          36,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          2,
+          32,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          0,
+          36
+        ]
+      ],
+      "total": 200,
+      "correct": 172,
+      "accuracy": 0.86,
+      "macro_precision": 0.8672986814863245,
+      "macro_recall": 0.8600000000000001,
+      "macro_f1": 0.8602915581928627,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 42,
+          "tp": 37,
+          "precision": 0.8809523809523809,
+          "recall": 0.925,
+          "f1": 0.9024390243902439
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 38,
+          "tp": 31,
+          "precision": 0.8157894736842105,
+          "recall": 0.775,
+          "f1": 0.7948717948717949
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 46,
+          "tp": 36,
+          "precision": 0.782608695652174,
+          "recall": 0.9,
+          "f1": 0.8372093023255814
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 32,
+          "tp": 32,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.888888888888889
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 42,
+          "tp": 36,
+          "precision": 0.8571428571428571,
+          "recall": 0.9,
+          "f1": 0.8780487804878048
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 256.49466749400017,
+      "weights": "exports/cv_70_20_10/fold_3"
+    },
+    {
+      "run": "fold_4",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          39,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          37,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          36,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          39,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          2,
+          35
+        ]
+      ],
+      "total": 200,
+      "correct": 186,
+      "accuracy": 0.93,
+      "macro_precision": 0.9301647989452867,
+      "macro_recall": 0.93,
+      "macro_f1": 0.929719416386083,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 41,
+          "tp": 39,
+          "precision": 0.9512195121951219,
+          "recall": 0.975,
+          "f1": 0.9629629629629629
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 41,
+          "tp": 37,
+          "precision": 0.9024390243902439,
+          "recall": 0.925,
+          "f1": 0.9135802469135802
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 40,
+          "tp": 36,
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 41,
+          "tp": 39,
+          "precision": 0.9512195121951219,
+          "recall": 0.975,
+          "f1": 0.9629629629629629
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 37,
+          "tp": 35,
+          "precision": 0.9459459459459459,
+          "recall": 0.875,
+          "f1": 0.9090909090909091
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 262.80264033100684,
+      "weights": "exports/cv_70_20_10/fold_4"
+    },
+    {
+      "run": "fold_5",
+      "test_images": 200,
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          34,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          39,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          37,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          37
+        ]
+      ],
+      "total": 200,
+      "correct": 187,
+      "accuracy": 0.935,
+      "macro_precision": 0.9404629413140052,
+      "macro_recall": 0.9349999999999999,
+      "macro_f1": 0.9353151937401227,
+      "per_class": [
+        {
+          "class": "circulo",
+          "support": 40,
+          "predicted": 42,
+          "tp": 40,
+          "precision": 0.9523809523809523,
+          "recall": 1.0,
+          "f1": 0.975609756097561
+        },
+        {
+          "class": "quadrado",
+          "support": 40,
+          "predicted": 35,
+          "tp": 34,
+          "precision": 0.9714285714285714,
+          "recall": 0.85,
+          "f1": 0.9066666666666667
+        },
+        {
+          "class": "triangulo",
+          "support": 40,
+          "predicted": 47,
+          "tp": 39,
+          "precision": 0.8297872340425532,
+          "recall": 0.975,
+          "f1": 0.896551724137931
+        },
+        {
+          "class": "cruz",
+          "support": 40,
+          "predicted": 37,
+          "tp": 37,
+          "precision": 1.0,
+          "recall": 0.925,
+          "f1": 0.961038961038961
+        },
+        {
+          "class": "estrela",
+          "support": 40,
+          "predicted": 39,
+          "tp": 37,
+          "precision": 0.9487179487179487,
+          "recall": 0.925,
+          "f1": 0.9367088607594937
+        }
+      ],
+      "rtl_python_integer_logits_exact": true,
+      "rtl_python_integer_class_exact": true,
+      "reference_matches": 200,
+      "cycles_per_image_unique": [
+        206520
+      ],
+      "elapsed_seconds": 267.7437578229874,
+      "weights": "exports/cv_70_20_10/fold_5"
+    }
+  ],
+  "mean_accuracy_folds": 0.898,
+  "std_accuracy_folds": 0.03510697936308395,
+  "all_rtl_python_integer_exact": true
+}
