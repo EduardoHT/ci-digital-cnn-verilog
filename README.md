@@ -6,15 +6,13 @@ O repositório inclui o dataset sintético, notebook, código Python, módulos e
 
 ## Comece por aqui
 
-- [Guia passo a passo de Python](docs/01_Guia_Python.pdf)
+- [Guia passo a passo de Python — versão 3](docs/01_Guia_Python_v3.pdf)
 - [Guia passo a passo de SystemVerilog](docs/02_Guia_SystemVerilog.pdf)
 - [Notebook de treinamento e exportação](notebooks/01_treino_exportacao.ipynb)
 - [Prévia do dataset](dataset/preview.png)
 - [Estado e limites da validação](reports/validation_status.json)
 - [Contrato RTL e simulação online](docs/CONTRATO_RTL_E_SIMULACAO.md)
 - [Evidência da simulação HDL online](reports/hdl_online_verification_2026-09-27.md)
-- [Auditoria técnica da versão 2](AUDITORIA_V2.md)
-- [README original do pacote](README_ORIGINAL.md)
 
 ## Conteúdo principal
 
@@ -51,8 +49,9 @@ A parte Python foi executada e testada. Em 27/09/2026, a RTL SystemVerilog compl
 
 A simulação não equivale a síntese, análise de timing ou validação em FPGA física; essas etapas permanecem pendentes.
 
-Consulte o [README original](README_ORIGINAL.md) para os comandos completos de instalação, treinamento, exportação e simulação, além do contrato numérico usado entre Python e RTL.
+Consulte os guias de [Python](docs/01_Guia_Python_v3.pdf) e [SystemVerilog](docs/02_Guia_SystemVerilog.pdf) para as instruções de treinamento, exportação e simulação, além do [contrato numérico](docs/CONTRATO_RTL_E_SIMULACAO.md) usado entre Python e RTL.
 
 ## Proveniência
 
 Os arquivos do pacote original foram preservados. A identificação do ZIP-fonte está registrada em [SOURCE_ARCHIVE_SHA256.txt](SOURCE_ARCHIVE_SHA256.txt).
+
