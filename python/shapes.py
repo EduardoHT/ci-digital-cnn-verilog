@@ -93,7 +93,11 @@ def shape_image(label: int, rng: np.random.Generator) -> tuple[Image.Image, dict
 
 def generate_dataset(out: Path = ROOT / "dataset", total: int = 2000,
                      seed: int = SEED, overwrite: bool = False) -> dict:
-    """70/15/15, balanceado. Gera cada imagem de forma independente.
+    """Gerador historico v2: 70/15/15, balanceado.
+
+    A campanha atual 70/20/10 redistribui estas imagens por manifesto com
+    ci_digital_cv_train.py. Nao use as pastas historicas para inferir essa divisao.
+    Gera cada imagem de forma independente.
 
     Use outra pasta para um novo dataset. --overwrite so remove os PNGs
     das pastas de classes deste dataset, nunca outros arquivos do projeto.
