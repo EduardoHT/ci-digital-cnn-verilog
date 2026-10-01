@@ -19,7 +19,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -f docs/01_Guia_Python.pdf
+          test -f docs/01_Guia_Python_v3.pdf
           test -f docs/02_Guia_SystemVerilog.pdf
           test -f notebooks/01_treino_exportacao.ipynb
           test -f rtl/tiny_cnn.sv
@@ -30,3 +30,4 @@ jobs:
           test "$(find dataset/val -type f -name '*.png' | wc -l)" -eq 300
           test "$(find dataset/test -type f -name '*.png' | wc -l)" -eq 300
           test ! -e ci-digital-cnn-verilog-upload.zip
+
