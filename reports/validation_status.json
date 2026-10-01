@@ -1,4 +1,7 @@
 {
+  "record_scope": "Historical v2 snapshot (70/15/15). Not the status of the current 70/20/10 campaign.",
+  "current_campaign_training_summary": "runs/cv_70_20_10/summary.json",
+  "current_campaign_rtl_summary": "results/rtl_cv_70_20_10/summary.json",
   "date": "2026-09-25",
   "project_version": "2.0",
   "dataset": {
